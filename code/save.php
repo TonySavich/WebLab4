@@ -52,7 +52,7 @@ $options = [
     'valueInputOption' => 'RAW'
 ];
 
-$spreadsheetId = '11UdYuGPhVGxR53o5jy_Pi_L3Of0P6cUY043vDfcVDg0';
+$spreadsheetId = '';//Здесь должен быть идентификатор
 $response = $service->spreadsheets_values->get($spreadsheetId, $range);
 foreach($response as $v){
     $super++;
