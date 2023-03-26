@@ -16,9 +16,6 @@ $service = new Google_Service_Sheets($client);
 $range = 'A:D';
 
 
-$values = new Google_Service_Sheets_ValueRange([
-    'values' => $data
-]);
 
 $options = [
     'valueInputOption' => 'RAW'
