@@ -16,11 +16,6 @@ $service = new Google_Service_Sheets($client);
 $range = 'A:D';
 
 
-
-$options = [
-    'valueInputOption' => 'RAW'
-];
-
 $spreadsheetId = '';//Здесь должен быть идентификатор
 
 $response = $service->spreadsheets_values->get($spreadsheetId, $range);
